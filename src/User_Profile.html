@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="profile-details.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="topnav d-flex">
+            <div class="flex-grow-1">
+                <input type="text" placeholder=" Search.." id="search">
+            </div>
+            <a class="active nav" style="margin-top: auto !important;" href="#home" id="tab_home">Home</a>
+            <a href="#about" id="tab_about" class="nav">About</a>
+<!--            <a href="#my_design" id="tab_design" class="nav" >My Design</a>-->
+        </div>
+    </div>
+    <div class="container" id="div_container">
+        <div class="profile-card">
+            <img src="professional_girl.jpg">
+            <div class="profile-details">
+                <div id="social_msg" class="d-flex">
+                    <div class="flex-grow-1">
+                        <button class="follow-btn"> + Follow</button>
+                    </div>
+                    <button class="message-btn">Message</button>
+                </div>
+                <div class="intro">
+                    <h2 style="padding-bottom: 10px;">Monalisa Asley</h2>
+                    <h4>UI/UX Designer</h4>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook" style="color:var(--blue)"></i></a>
+                        <a href="#"><i class="fab fa-twitter"  style="color:var(--skyblue)"></i></a>
+                        <a href="#"><i class="fab fa-skype"  style="color:var(--dark-pink)"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"  style="color:var(--light-blue)"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fa fa-phone"  style="color:var(--dark-magenta)"></i>
+                        </div>
+                        <div class="content">
+                            <span>Phone</span>
+                            <h5>+123 456 789</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fa fa-envelope-open"  style="color:var(--light-green)"></i>
+                        </div>
+                        <div class="content">
+                            <span>Email</span>
+                            <h5>monalisasley@gmail.com</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"  style="color:var(--light-purple)"></i>
+                        </div>
+                        <div class="content">
+                            <span>Location</span>
+                            <h5>Sydney, Australia</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="download-btn"> <i class="fa fa-download"></i> Download CV</button>
+            </div>
+        </div>
+
+        <!----about section ----->
+        <div class="about">
+            <h1>About Me</h1>
+            <div class="about-align">
+                <p> I'm Creative Director and UI/UX Designer from Sydney, Australia,
+                    working in web development and print media.I enjoy turning complex problems into simple,
+                    beautiful and intuitive designs.
+                </p>
+                <p>
+                    My aim is to bring across your message and identity in the most creative way.
+                    I created web design for many famous brand companies.
+                </p>
+            </div>
+            <h2>What I Do !!!</h2>
+            <div class="work">
+                <div class="workbox">
+                    <div class="desc">
+                        <p style="color:#f64c57" class="heading">UI/UX Designer</p>
+                        <p> I'm a UX/UI Designer with a background in Psychology, which gives me a unique edge in empathizing with users and improving their experience through design. My research experience has refined my problem-solving skills and user insights.</p>
+                    </div>
+                </div>
+
+                <div class="workbox">
+                    <div class="desc">
+                        <p style="color:#f64c57" class="heading">App Developement</p>
+                        <p>Implemented use of mobile application without network using RealmDB and syncing the data updated or added in offline, to server when device connects back to network.</p>
+                    </div>
+                </div>
+
+                <div class="workbox">
+                    <div class="desc">
+                        <p style="color:#f64c57" class="heading">API Developement</p>
+                        <p>Worked directly with a company and its API developer to create REST API designs.Used my expertise to offer them feedback and help ensure their end product was successful.Increased the overall efficiency of the project by 25%.</p>
+                    </div>
+                </div>
+
+                <div class="workbox">
+                    <div class="desc">
+                        <p style="color:#f64c57" class="heading">Web Developement</p>
+                        <p>Collaborated with senior writers to present campaigns to clients. Increased client portfolio by 15%. Optimised communication for maximum readership and online traffic by 14%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display:none;" id="div_about" >
+        <div class="" style="margin-top:0px;">
+            <h1 style="font-size:40px;margin-bottom:40px;">About Me</h1>
+            <div class="d-flex">
+                <div class="flex-grow-1 professional-data">
+                    <p style="color:#f64c57" class="heading-two"> EXPERIENCE</p>
+                    <img src="designer.png" class="ux_image">
+                    <p>Senior Product Designer</p>
+                    <h6>(oct 2023 - present)</h6>
+                    <p> It has excellent visual and interaction design skills, a deep understanding of user psychology, and the ability to translate user needs into compelling designs. I have a creative, detail-oriented, and have strong communication skills.</p>
+                </div>
+                <div class="professional-data">
+                    <p style="color:#f64c57" class="heading-two"> SKILLS</p>
+                    <img src="skill.png" class="ux_image">
+                    <p> I have a creative, detail-oriented, and have strong communication skills.I am a product designer creating compelling user interfaces for early-stage B2C startups to help them increase acquisition, design investment. User Interface Design, UX Design, UI Design, User Experience Design, HTML, Illustration Design and Adobe Products.</p>
+                </div>
+                <div class="professional-data">
+                    <p style="color:#f64c57" class="heading-two"> LICENCES AND CERTIFICATES</p>
+                    <img src="certificate.png" class="ux_image">
+                    <p>UI Designer and Creating award-winning Mac Apps.Product Designer - 15 years building startups.Junior UX Researcher | Passionate about mobile design for complex data | Fin-tech | Web3.Senior UX Reseracher | Focused on design accessibility and sustainability</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div style="display:none;" id="div_design">
+        <div class="about">
+            <h1>My designs</h1>
+        </div>
+    </div>-->
+    <!--<div class="main_content" style="margin-bottom:20px;">
+
+    </div>-->
+    <div class="footer">
+        <div class="d-flex footer-div">
+            <div class="flex-grow-1">
+                <h3>&copy 2024</h3>
+            </div>
+            <p class="footer-align">User Agreement</p>
+            <p class="footer-align">Privacy Policy</p>
+            <p class="footer-align">Copyright Policy</p>
+            <p class="footer-align">Help</p>
+        </div>
+    </div>
+</body>
+</html>
